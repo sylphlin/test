@@ -3,3 +3,7 @@ node_js:
    - 0.10
 notifications:
   slack: dlink:OwQp8K703yxW7SeJ9ZHZHpCj
+
+before_script:
+  - mysql -e 'create database license;'
+  - mysql license < sql/schema.sql

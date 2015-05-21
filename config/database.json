@@ -1,0 +1,23 @@
+{
+    "development":{
+        "sql_host":"locahost",
+        "sql_database": "license",
+        "sql_user": "root",
+        "sql_password":"",
+        "sql_port": 3306
+    },
+    "test":{
+        "sql_host":"locahost",
+        "sql_database": "license",
+        "sql_user": "root",
+        "sql_password":"",
+        "sql_port": 3306
+    },
+    "production":{
+        "sql_host":"locahost",
+        "sql_database": "license",
+        "sql_user": "root",
+        "sql_password":"",
+        "sql_port": 3306
+    }
+}
