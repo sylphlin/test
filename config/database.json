@@ -1,9 +1,9 @@
 {
     "development":{
-        "sql_host":"locahost",
-        "sql_database": "license",
-        "sql_user": "root",
-        "sql_password":"",
+        "sql_host":"common.c1mln08xrxwy.us-west-1.rds.amazonaws.com",
+        "sql_database": "tmp",
+        "sql_user": "test",
+        "sql_password":"test",
         "sql_port": 3306
     },
     "test":{

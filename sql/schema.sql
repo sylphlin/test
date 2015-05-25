@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- 資料表結構 `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL,
   `username` varchar(255) CHARACTER SET utf8 NOT NULL,
   `password` varchar(255) CHARACTER SET utf8 NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- 資料表的匯出資料 `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`, `email`) VALUES
+INSERT INTO `users` (`id`, `username`, `password`, `email`) VALUES
 (1, 'admin', 'admin', 'admin@example.com'),
 (2, 'sylph', '123456', 'sylph@abc.com');
 
@@ -48,7 +48,7 @@ INSERT INTO `user` (`id`, `username`, `password`, `email`) VALUES
 --
 -- 資料表索引 `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,7 +58,7 @@ ALTER TABLE `user`
 --
 -- 使用資料表 AUTO_INCREMENT `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

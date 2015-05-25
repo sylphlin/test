@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "jscs": "~1.13.1",
+    "mocha-jscs": "~1.1.0"
   }
 }

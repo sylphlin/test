@@ -7,4 +7,3 @@ notifications:
 before_script:
   - mysql -e 'create database license;'
   - mysql license < sql/schema.sql
-  - mysql -e 'use license; show tables;'
