@@ -1,5 +1,4 @@
 {
     "preset": "node-style-guide",
-    "requireCurlyBraces": null,
     "excludeFiles": ["node_modules/**"]
 }
