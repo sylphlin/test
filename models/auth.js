@@ -18,11 +18,11 @@ function auth(username, password, callback) {
       return;
     }
 
-    var sql = "SELECT id FROM users WHERE username = ? AND password = ? LIMIT 1";
+    var sql = 'SELECT id FROM users WHERE username = ? AND password = ? LIMIT 1';
     var sqlParam = [username, password];
 
     connection.query(sql, sqlParam, function(err, results) {
-      if(err) { throw err; }
+      if (err) { throw err; }
 
       callback(results);
 

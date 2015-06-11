@@ -3,6 +3,10 @@
 var assert = require('chai').assert;
 var should = require('chai').should();
 var expect = require('chai').expect();
+var supertest = require('supertest');
+var express = require('express');
+var app = express();
+var api = supertest('http://localhost:3000');
 var keygen = require('../models/keygen');
 var server = require('../models/server');
 
@@ -20,10 +24,18 @@ describe('Check Server Version', function() {
       server.softwareVersion.should.equal('0.0.5');
     });
   });
+
+  describe('Check API Server Version', function() {
+    it('should return HTTP response 200', function() {
+      api.get('/api/server/status')
+      .set('Accept', 'applicaiton/json')
+      .expect(200);
+    });
+  });
+
   describe('Check API Version', function() {
     it('should return 0.0.1', function() {
       server.apiVersion.should.equal('0.0.1');
     });
   });
 });
-

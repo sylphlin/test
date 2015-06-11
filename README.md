@@ -10,3 +10,5 @@ Circle CI
 
 Travis
 [![Build Status](https://travis-ci.org/sylphlin/test.svg?branch=master)](https://travis-ci.org/sylphlin/test)
+
+[![Code Climate](https://codeclimate.com/github/sylphlin/test/badges/gpa.svg)](https://codeclimate.com/github/sylphlin/test)

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "stop": "pkill -9 test-server",
     "test": "mocha"
   },
   "dependencies": {
@@ -15,7 +16,8 @@
     "serve-favicon": "~2.2.0",
     "crypto": "~0.0.3",
     "mysql": "~2.6.2",
-    "ejs": "~2.3.1"
+    "ejs": "~2.3.1",
+    "supertest": "~1.0.1"
   },
   "devDependencies": {
     "mocha": "*",
